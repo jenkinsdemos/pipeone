@@ -8,4 +8,8 @@ node {
 	stage('three') {
 		echo 'three'
 	}
+	stage('script') {
+		sh 'chmod +x script.sh'
+		sh './script.sh'
+	}
 }
